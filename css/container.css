@@ -1,0 +1,185 @@
+body{
+    background-color: whitesmoke;
+}
+
+.container{
+    margin:auto;
+    background-color: whitesmoke;
+    width: 00px;
+    padding: 30px;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Estilos para la sección de imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    height: calc((100vw / 3) * 0.8);
+    margin-top: 0px; 
+    overflow: hidden;
+    gap: 20px;
+}
+
+/* Estilo para las imágenes dentro de .image */
+.image {
+    flex: 1;
+}
+
+/* Estilo para las imágenes dentro de .image */
+.image img {
+    width: 110%; 
+    height: 120%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 0%;
+}
+
+
+
+
+.image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    background-color: #f0f0f0; 
+    padding: 20px; 
+}
+
+.image-container img {
+    flex: 1; 
+    max-width: 50%; 
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
+#nosotros {
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(252, 252, 253, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+    position: relative;
+}
+
+#nosotros h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#nosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #0a0909;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-justify:newspaper
+}
+
+#nosotros p:last-child {
+    margin-bottom: 0;
+}
+
+#trebol {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+#contacto {
+    text-align: center;
+    padding: 50px 0;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    position: relative;
+}
+
+#contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contacto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: hsl(0, 3%, 7%);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(251, 253, 254);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0606bec6;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #b698f8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #a179f0;
+}

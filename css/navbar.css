@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color:rgb(6, 52, 169);
+    
+}
+
+.navbar a{
+    color: rgb(249, 244, 244);
+    padding: 14px 60px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color:#1580e55d;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 700px){
+    .navbar{
+        flex-direction:column;
+    }
+}
+    
